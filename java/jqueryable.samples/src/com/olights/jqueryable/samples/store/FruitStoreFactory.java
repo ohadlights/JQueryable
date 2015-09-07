@@ -1,4 +1,4 @@
-package jqueryable.samples.store;
+package com.olights.jqueryable.samples.store;
 
 public class FruitStoreFactory {
 

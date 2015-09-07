@@ -1,4 +1,4 @@
-package jqueryable.samples.fruits;
+package com.olights.jqueryable.samples.fruits;
 
 public interface Product {
 

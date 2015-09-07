@@ -1,16 +1,15 @@
-package jqueryable.samples.runner;
+package com.olights.jqueryable.samples.runner;
 
 import java.util.Comparator;
 import java.util.Optional;
 
-import jqueryable.samples.fruits.Apple;
-import jqueryable.samples.fruits.FruitProduct;
-import jqueryable.samples.fruits.Orange;
-import jqueryable.samples.store.FruitStoreApi;
-import jqueryable.samples.store.FruitStoreFactory;
-import jqueryable.samples.store.FruitStoreManager;
-
 import com.olights.jqueryable.IQueryable;
+import com.olights.jqueryable.samples.fruits.Apple;
+import com.olights.jqueryable.samples.fruits.FruitProduct;
+import com.olights.jqueryable.samples.fruits.Orange;
+import com.olights.jqueryable.samples.store.FruitStoreApi;
+import com.olights.jqueryable.samples.store.FruitStoreFactory;
+import com.olights.jqueryable.samples.store.FruitStoreManager;
 
 public class Runner {
 

@@ -1,10 +1,9 @@
-package jqueryable.samples.store;
-
-import jqueryable.samples.fruits.Apple;
-import jqueryable.samples.fruits.FruitProduct;
-import jqueryable.samples.fruits.Orange;
+package com.olights.jqueryable.samples.store;
 
 import com.olights.jqueryable.IQueryable;
+import com.olights.jqueryable.samples.fruits.Apple;
+import com.olights.jqueryable.samples.fruits.FruitProduct;
+import com.olights.jqueryable.samples.fruits.Orange;
 
 public interface FruitStoreApi {
 	

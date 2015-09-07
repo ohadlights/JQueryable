@@ -1,4 +1,4 @@
-package jqueryable.tests;
+package com.olights.jqueryable.tests;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
