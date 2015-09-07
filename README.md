@@ -9,4 +9,4 @@ JQueryable
 
 Queryable Java collections based on Java 8 Stream class and lambda capabilities.
 
-IQueryable interface contains methods such as: filtering, sorting, mapping and so on.
+IQueryable interface contains methods for filtering, sorting, mapping and so on.
