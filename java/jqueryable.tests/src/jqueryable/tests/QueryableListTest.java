@@ -60,7 +60,7 @@ public class QueryableListTest {
 		assertEquals("10", result.get(3));
 	}
 	
-	private <T> List<T> createList(T... items) {
+	private <T> List<T> createList(@SuppressWarnings("unchecked") T... items) {
 		List<T> list = new ArrayList<T>();
 		for (T item : items) {
 			list.add(item);
