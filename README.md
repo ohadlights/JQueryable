@@ -12,7 +12,7 @@ Queryable Java collections based on Java 8 Stream class and lambda capabilities.
 
 The new Stream class is a great addition to Java collections but it comes with a few inconveniences.
 
-In order to query a List<T>, one needs to first call stream() and then perform the query operations.
+In order to query a List<T>, one needs to call stream() first and then perform the query operations.
 When the query is done, the result stream cannot be saved for later reuse. Instead it has to be transformed back to a list using collect() & Collectors class.
 
 JQueryable comes to make the use of these new capabilities simpler.
