@@ -16,8 +16,9 @@ In order to query a List<T>, one needs to first call stream() and then perform t
 When the query is done, the result stream cannot be saved for later reuse. Instead it has to be transformed back to a list using collect() & Collectors class.
 
 JQueryable comes to make the use of these new capabilities simpler.
-1. It hides the call for stream()
-2. When the query is done, the result is a IQeuryable<T> which can be saved for later resue or even more querying.
+
+1.  It hides the call for stream()
+2.  When the query is done, the result is a IQeuryable<T> which can be saved for later resue or even more querying.
 
 QueryableList<T> inherits from ArrayList<T>, so it has all the List methods, plus the querying functionality.
 Of course, after a query is done on a QueryableList, the result is still a QueryableList.
