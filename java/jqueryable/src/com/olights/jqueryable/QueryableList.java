@@ -121,10 +121,6 @@ public class QueryableList<Type> extends ArrayList<Type> implements IQueryableLi
 		return array;
 	}
 	
-	private <OutType> QueryableList<OutType> toQueryableList(Stream<OutType> stream) {
-		return stream.collect(QueryableCollector.toQueryable());
-	}
-
 	@Override
 	public IQueryable<Type> sorted() {
 		return toQueryableList(stream().sorted()); 
@@ -133,6 +129,15 @@ public class QueryableList<Type> extends ArrayList<Type> implements IQueryableLi
 	@Override
 	public IQueryable<Type> sorted(Comparator<? super Type> comparator) {
 		return toQueryableList(stream().sorted(comparator));
+	}
+	
+	@Override
+	public IQueryable<Type> distinct() {
+		return toQueryableList(stream().distinct());
+	}
+	
+	private <OutType> QueryableList<OutType> toQueryableList(Stream<OutType> stream) {
+		return stream.collect(QueryableCollector.toQueryable());
 	}
 	
 	private <T> Collection<T> toCollection(Iterable<T> iterable) {

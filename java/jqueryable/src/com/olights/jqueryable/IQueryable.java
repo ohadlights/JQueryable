@@ -138,5 +138,12 @@ public interface IQueryable<Type> extends IContainer<Type> {
 	 * @return the new queryable
 	 */
 	IQueryable<Type> sorted(Comparator<? super Type> comparator);
+	
+	/**
+	 * Returns an queryable consisting of the distinct elements (according to Object.equals(Object)) of this queryable.
+	 * 
+	 * @return
+	 */
+	IQueryable<Type> distinct();
 
 }
