@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Java\jdk1.8.0_45\bin\jar.exe" cf C:\Users\omeir1\Desktop\Export\olights-jqueryable.1.0.1-javadoc.jar *
