@@ -13,7 +13,7 @@ import java.util.stream.Collector;
  * This class is used to transform a @Stream of elements to a QueryableList
  * Usage: stream.collect(QueryableCollector.toQueryable());
  *
- * @param <T>
+ * @param <T> Type of the contained items
  */
 public class QueryableCollector<T> implements Collector<T,QueryableList<T>,QueryableList<T>> {
 
@@ -23,6 +23,7 @@ public class QueryableCollector<T> implements Collector<T,QueryableList<T>,Query
 	/**
 	 * Return a new QueryableCollector
 	 * 
+	 * @param <T> Type of the contained items
 	 * @return the new QueryableCollector
 	 */
 	public static <T> Collector<T,QueryableList<T>,QueryableList<T>> toQueryable() {

@@ -26,6 +26,7 @@ public interface IQueryable<Type> extends IContainer<Type> {
 	 * This is an intermediate operation.
 	 * 
 	 * @param mapper a non-interfering, stateless function to apply to each element
+	 * @param <Out> the result of mapping the original type
 	 * @return the new IQueryable
 	 */
 	<Out> IQueryable<Out> map(Function<Type, Out> mapper);
@@ -35,6 +36,7 @@ public interface IQueryable<Type> extends IContainer<Type> {
 	 * This is an intermediate operation.
 	 * 
 	 * @param mapper a non-interfering, stateless function to apply to each element
+	 * @param <Out> the result of mapping the original type
 	 * @return the new IQueryable
 	 */
 	<Out> IQueryable<Out> mapMany(Function<Type, Iterable<Out>> mapper);
@@ -111,6 +113,7 @@ public interface IQueryable<Type> extends IContainer<Type> {
 	 * Returns an array containing the elements of this IQueryable.
 	 * This is a terminal operation.
 	 * 
+	 * @param generator function that generates a new array of the given type and size
 	 * @return an array containing the elements of this IQueryable
 	 */
 	Type[] toArray(IntFunction<Type[]> generator);
@@ -142,7 +145,7 @@ public interface IQueryable<Type> extends IContainer<Type> {
 	/**
 	 * Returns an queryable consisting of the distinct elements (according to Object.equals(Object)) of this queryable.
 	 * 
-	 * @return
+	 * @return the queryable result
 	 */
 	IQueryable<Type> distinct();
 
